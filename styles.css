@@ -437,3 +437,155 @@
         flex-direction: column;
     }
 }
+
+.options__near__me h1{
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.options__near__me .option{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.footer{
+    width: 100%;
+}
+
+.footer_section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.footer_section1 img{
+    width: 120px;
+    height: auto;
+}
+
+.section1__button_container{
+    display: flex;
+    gap: 16px;
+}
+
+.section1__button_container button{
+    padding: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer_section2{
+    display: grid;
+    width: 80%;
+    margin: auto;
+
+    grid-template-columns: repeat(5,1fr);
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+
+    gap: 16px;
+    padding: 48px 0;
+}
+
+.link__container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.link__container h5{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px;
+    letter-spacing: 1.5px;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: gray;
+    gap: 1px;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+}
+
+.footer__link:hover{
+    color: black;
+}
+
+.social__links_container{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social__links_container button{
+    background-color: black;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social__links_container button i{
+    color: white;
+    font-size: 13px;
+}
+
+.footer__store_logo{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .disclaimer{
+    width: 90%;
+    margin: auto;
+    padding: 40x 0;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: gray;
+    border-top: 1px solid gray;
+}
+
+@media only screen and (max-width: 900px)
+{
+    .footer_section2{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .footer_section2{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 450px)
+{
+    .footer_section1{
+        flex-direction: column;
+        columns: 16px;
+        align-items: flex-start;
+    }
+
+    .footer_section2{
+        grid-template-columns: 1fr;
+    }
+}
